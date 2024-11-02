@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<script>
+    // function Hello(){
+    //     alert("Hi Shana!")
+        function Addnumber(){
+            var Number1=parseFloat(document.getElementById("Number1").value);
+            var Number2=parseFloat(document.getElementById("Number2").value);
+            var Number3=parseFloat(document.getElementById("Number3").value);
+            Sum=Number1+Number2+Number3;
+            document.getElementById("results").innerHTML=Sum;
+        }
+</script>
+<body>
+    <h1>Events</h1>
+    <!-- <button onclick="Hello()">click me</button> -->
+    <!-- <button ondbclick="Hello()">search</button>  -->
+    <!-- <button onmousedown="Hello()">click me</button>  -->
+    <!-- <button onkeyup="Hello()">on key up</button> -->
+
+    <h1>Addition</h1>
+    <input id="Number1"placeholder="Enter the number" type="number" name="" id="">
+    <input id="Number2"placeholder="Enter the number" type="number" name="" id="">
+    <input id="Number3"placeholder="Enter the number" type="number" name="" id="">
+    <button onclick=Addnumber()>Add</button>
+    <h1 id="results"></h1>
+</body>
+</html>

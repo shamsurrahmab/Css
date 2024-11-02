@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Task</title>
+</head>
+<body>
+    <h1>Function Tasks</h1>
+    <script>
+           document.write("<h3>Sum of two Numbers</h3>")
+        function A(n1,n2){
+            sum = n1+n2;
+            return sum;
+        }
+         var add = A(10,15);
+         document.write("Addition of number 1 and 2 Is  :"+add+"<br/>")
+
+         document.write("<h3>Check a Number its Even or Odd </h3>")
+    function number(n1){
+        var even="number Is Even "+"<br/>";
+        var odd=" Number Is "+"<br/>";
+        if(n1 % 2 == 0){ 
+            return even;
+        }
+        else {
+            return odd;
+        }
+    }
+    var check = number(11);
+    document.write(check);
+
+
+    document.write("<h3>Farenhite to Celsuis </h3>")
+    function changer(celsuis){
+        document.write("Temperature in Celsuis :"+celsuis+"<br/>")
+       farenhite = celsuis * (9/5) + 32;
+       document.write("Temperature in farenhite is :"+farenhite+ "<br/>")
+    }
+    changer(98);
+document.write("<h3>Largest Number in Array</h3>")
+
+    function largestnumber(array){
+        let largest = array[0];  //largest number is present at zero index at point    
+        for(let i=1;i<array.length;i++){
+            if(array[i]>largest){
+                largest = array[i];
+            }
+        }
+        return largest;
+    }
+    let a =[10,20,30,40,50];
+    document.write("Largest Number Is :"+largestnumber(a)+"<br/>");
+
+    document.write("<h3>Reverse String</h3>")
+    function reverseString(shams) {
+        //Splits: It splits string into individual of array character
+        //Reverse: It reverses the order of an array element
+        //Join: It joins the elements of an array back innto single string
+    return shams.split('').reverse().join('');
+}
+document.write(reverseString("Shana!"));
+    </script>
+</body>
+</html>
